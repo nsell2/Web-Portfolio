@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" id="contact">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- jquery and jquery-ui from cdnjs -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js" integrity="sha512-MSOo1aY+3pXCOCdGAYoBZ6YGI0aragoQsg1mKKBHXCYPIWxamwOE7Drh+N5CPgGI5SA9IEKJiPjdfqWFWmZtRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.js" integrity="sha512-cWEytOR8S4v/Sd3G5P1Yb7NbYgF1YAUzlg1/XpDuouZVo3FEiMXbeWh4zewcYu/sXYQR5PgYLRbhf18X/0vpRg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- jquery-ui theme/styles -->
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+        <!-- my javascript file -->
+        <script src="index.js" defer></script>
+        <!-- my css file -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- my fonts -->
+        <link rel="stylesheet" href="https://use.typekit.net/xib2zdj.css">
+        <meta name="author" content="Noah Sell">
+        <title>Noah Sell Web Portfolio | Contact</title>
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Noah Sell's Web Development logo, an 'N' and an 'S' designed to resemble a smiling face">
+                    <h1>Noah<br>Sell</h1>
+                </a>
+            </div>
+            <span id="menuControl" class="closed" aria-labelledby="navigation-menu-opener"><h2 id="navigation-menu-opener">Navigation Menu Opener</h2></span>
+            <nav id="contactNav" class="closed">
+                <h2>Main Navigation</h2>
+                <ul>
+                    <li><a href="about.html" class="underline">About</a></li>
+                    <li><a href="projects.html" class="underline">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <!-- <form action="contact-form.php" method="post" id="contactForm"> -->
+            <form action="mailto: noahsell99@gmail.com" method="post" enctype="multipart/form-data" id="contactForm">
+                <h2>Let's Connect</h2>
+                <p>Leave your name and contact information along with your message and I will get back to you soon!</p>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email">
+                <label for="message">Message:</label>
+                <textarea name="message" id="message"></textarea>
+                <input type="submit" id="submit" value="Submit" class="underline">
+            </form>
+        </main>
+        <footer>
+            <small>Noah Sell &copy; 2025</small>
+        </footer>
+    </body>
+</html>

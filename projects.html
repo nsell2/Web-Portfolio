@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" id="projects">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- jquery and jquery-ui from cdnjs -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.14.1/jquery-ui.min.js" integrity="sha512-MSOo1aY+3pXCOCdGAYoBZ6YGI0aragoQsg1mKKBHXCYPIWxamwOE7Drh+N5CPgGI5SA9IEKJiPjdfqWFWmZtRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.min.js" integrity="sha512-cWEytOR8S4v/Sd3G5P1Yb7NbYgF1YAUzlg1/XpDuouZVo3FEiMXbeWh4zewcYu/sXYQR5PgYLRbhf18X/0vpRg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- jquery-ui theme/styles -->
+        <link rel="stylesheet" href="css/jquery-ui.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.structure.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.theme.min.css">
+        <!-- my javascript file -->
+        <script src="index.js" defer></script>
+        <!-- my css file -->
+        <link rel="stylesheet" href="styles.css">
+        <!-- my fonts -->
+        <link rel="stylesheet" href="https://use.typekit.net/xib2zdj.css">
+        <meta name="author" content="Noah Sell">
+        <title>Noah Sell Web Portfolio | Projects</title>
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="Noah Sell's Web Development logo, an 'N' and an 'S' designed to resemble a smiling face">
+                    <h1>Noah<br>Sell</h1>
+                </a>
+            </div>                
+            <span id="menuControl" class="closed" aria-labelledby="navigation-menu-opener"><h2 id="navigation-menu-opener">Navigation Menu Opener</h2></span>
+            <nav id="projectsNav" class="closed">
+                <h2>Main Navigation</h2>
+                <ul>
+                    <li><a href="about.html" class="underline">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html" class="underline">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <ul id="projectList">
+                <li class="selected" id="project1">
+                    <a href="#projectList">
+                        <img src="images/nobodys-favorite.png" alt="Screenshot of the Nobody's Favorite band website">
+                        <span>Nobody's Favorite Band Website</span>
+                    </a>
+                </li>
+                <li class="deselected" id="project2">
+                    <a href="#projectList">
+                        <img src="images/pure-imagination.png" alt="Pure Imagination booklet cover dotted with small stars and a pastel rainbow in the background">
+                        <span>Creative South Marketing Materials</span>
+                    </a>
+                </li>
+                <li class="deselected" id="project3">
+                    <a href="#projectList">
+                        <img src="images/dnd-simplified.png" alt="Screenshot of the Guide page from the D&D Simplified website">
+                        <span>D&D Simplified Senior Project</span>
+                    </a>
+                </li>
+            </ul>
+            <section id="projectDetails">
+                <h2>Project Details</h2>               
+                <div id="nobodysFavorite" class="displayProject">
+                    <p>
+                        <span class="detailsTitle">Background: </span>
+                        <span id="background">
+                            Nobody's Favorite is a punk rock band based out of Moorhead, MN that was formed in 2023. As the band is still fairly new, they needed a website that would help boost their name recognition, display dates of upcoming performances, and give a preview of the merchandise that they sell at their shows.
+                        </span>
+                    </p>
+                    <span class="lineBreak"></span>
+                    <p>
+                        <span class="detailsTitle">Process: </span>
+                        <span id="process">
+                            I first had the client send me the band's logo, photos of merchandise options, candids from their past performances, and the information on their next upcoming shows. This helped me better understand the band's identity, which was important for selecting a color scheme and typography for the website. I then created a simple outline that I followed as I wrote the HTML code for the website's content. Once that was finished, I wrote the CSS and JavaScript code that gave the website its style and functionality.
+                        </span>
+                    </p>
+                    <span class="lineBreak"></span>
+                    <p>
+                        <span class="detailsTitle">Results: </span>
+                        <span id="results">
+                            The website was completed before the deadline and works as intended. The band was very pleased when they were sent the final result. It has a clean and simple layout that can easily be edited or added to if the band needs something changed, but still feels like a natural extension of the band's identity.
+                        </span>
+                    </p>
+                    <br>
+                    <p>
+                        This project can be viewed here: <span  id="linkToProject"><a href="https://nsell2.github.io/nobodys.favorite/" target="_blank" class="underline">Nobody's Favorite Band</a></span>
+                    </p>
+                </div>
+                <div id="pureImagination" class="hideProject">
+                    <p>
+                        <span class="detailsTitle">Background: </span>
+                        <span id="background">
+                            The Digital Publishing course at ASU teaches students to use industry-standard methods and technologies to produce web and print publication materials. The final project for this course was to research various design conferences before selecting one and creating various marketing materials for it.
+                        </span>
+                    </p>
+                    <span class="lineBreak"></span>
+                    <p>
+                        <span class="detailsTitle">Process: </span>
+                        <span id="process">
+                            The first step in this project was researching the design conference I chose, Creative South, to get a sense of the organization's brand identity. Next, I selected the color palettes and fonts to use in my marketing materials, keeping everything cohesive. Once I had a good understanding of what information I would need to include in each of my materials, I started sketching them all out on paper. After I had all of my ideas written down and sketched out, I used Adobe InDesign to create the four different types of marketing materials.
+                        </span>
+                    </p>
+                    <span class="lineBreak"></span>
+                    <p>
+                        <span class="detailsTitle">Results: </span>
+                        <span id="results">
+                            I was able to complete all of the deliverables by their due date, which included a web advertisement banner, a name tag/badge to be worn on a lanyard, a folding table tent, and a booklet with details about the conference. I was very happy with how each of the designs turned out and I got an A on the project as a whole.
+                        </span>
+                    </p>
+                    <br>
+                    <p>
+                        A copy of this project can be viewed here: <span  id="linkToProject"><a href="https://drive.google.com/file/d/1ENej6iqGNyMLCmvVFUFzqnboBBvAmNGr/view?usp=sharing" target="_blank" class="underline">Pure Imagination Materials</a></span>
+                    </p>
+                </div>
+                <div id="dndSimplified" class="hideProject">
+                    <p>
+                        <span class="detailsTitle">Background: </span>
+                        <span id="background">
+                            Nobody's Favorite is a punk rock band based out of Moorhead, MN that was formed in 2023. As the band is still fairly new, they needed a website that would help boost their name recognition, display dates of upcoming performances, and give a preview of the merchandise that they sell at their shows.
+                        </span>
+                    </p>
+                    <span class="lineBreak"></span>
+                    <p>
+                        <span class="detailsTitle">Process: </span>
+                        <span id="process">
+                            I first had the client send me the band's logo, photos of merchandise options, candids from their past performances, and the information on their next upcoming shows. This helped me better understand the band's identity, which was important for selecting a color scheme and typography for the website. I then created a simple outline that I followed as I wrote the HTML code for the website's content. Once that was finished, I wrote the CSS and JavaScript code that gave the website its style and functionality.
+                        </span>
+                    </p>
+                    <span class="lineBreak"></span>
+                    <p>
+                        <span class="detailsTitle">Results: </span>
+                        <span id="results">
+                            The website was completed before the deadline and works as intended. The band was very pleased when they were sent the final result. It has a clean and simple layout that can easily be edited or added to if the band needs something changed, but still feels like a natural extension of the band's identity.
+                        </span>
+                    </p>
+                    <br>
+                    <p>
+                        This project can be viewed here: <span  id="linkToProject"><a href="https://nsell2.github.io/nobodys.favorite/" target="_blank" class="underline">Nobody's Favorite Band</a></span>
+                    </p>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <small>Noah Sell &copy; 2025</small>
+        </footer>
+    </body>
