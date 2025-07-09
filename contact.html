@@ -19,6 +19,10 @@
         <link rel="stylesheet" href="https://use.typekit.net/xib2zdj.css">
         <meta name="author" content="Noah Sell">
         <title>Noah Sell Web Portfolio | Contact</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+        <link rel="manifest" href="favicons/site.webmanifest">
     </head>
     <body>
         <header>
@@ -28,7 +32,9 @@
                     <h1>Noah<br>Sell</h1>
                 </a>
             </div>
-            <span id="menuControl" class="closed" aria-labelledby="navigation-menu-opener"><h2 id="navigation-menu-opener">Navigation Menu Opener</h2></span>
+            <div id="menuControlWrapper" class="closed controller">
+                <span id="menuControl" class="closed" aria-labelledby="navigation-menu-opener"><h2 id="navigation-menu-opener">Navigation Menu Opener</h2></span>
+            </div id="controlWrapper">
             <nav id="contactNav" class="closed">
                 <h2>Main Navigation</h2>
                 <ul>
@@ -44,10 +50,10 @@
                 <h2>Let's Connect</h2>
                 <p>Leave your name and contact information along with your message and I will get back to you soon!</p>
                 <label for="name">Name:</label>
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" id="name" required aria-required="true">
 
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required aria-required="true">
 
                 <label for="message">Message:</label>
                 <textarea name="message" id="message"></textarea>

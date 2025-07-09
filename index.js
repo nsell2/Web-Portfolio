@@ -74,17 +74,139 @@ $("#project3").click(function(){
 
 
 // Menu Opener
+let menuControlWrapper = document.getElementById("menuControlWrapper");
 let menuOpener = document.getElementById("menuControl");
+
 let aboutNav = document.getElementById("aboutNav");
 let projectsNav = document.getElementById("projectsNav");
 let contactNav = document.getElementById("contactNav");
-document.getElementById("controlWrapper").addEventListener("click", function(){
+
+let switchMenu = document.querySelectorAll(".controller");
+let nav = document.getElementsByTagName("nav");
+
+switchMenu.forEach(menu => {
+    menu.addEventListener('click', changeMenu);
+});
+function changeMenu() {
+    menuControlWrapper.classList.toggle("open");
+    menuControlWrapper.classList.toggle("closed");
     menuOpener.classList.toggle("open");
     menuOpener.classList.toggle("closed");
-    aboutNav.classList.toggle("open");
-    aboutNav.classList.toggle("closed");
-    projectsNav.classList.toggle("open");
-    projectsNav.classList.toggle("closed");
-    contactNav.classList.toggle("open");
-    contactNav.classList.toggle("closed");
-});
+    if(aboutNav){
+        aboutNav.classList.toggle("open");
+        aboutNav.classList.toggle("closed");
+    }else if(projectsNav){
+        projectsNav.classList.toggle("open");
+        projectsNav.classList.toggle("closed");
+    }else if(contactNav){
+        contactNav.classList.toggle("open");
+        contactNav.classList.toggle("closed");
+    };
+};
+
+// Get the modal
+let modal = document.getElementById("imgModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+let projectImg1 = document.getElementById("projectImg1");
+let projectImg2 = document.getElementById("projectImg2");
+let projectImg3 = document.getElementById("projectImg3");
+let projectImg4 = document.getElementById("projectImg4");
+let projectImg5 = document.getElementById("projectImg5");
+let projectImg6 = document.getElementById("projectImg6");
+let projectImg7 = document.getElementById("projectImg7");
+let projectImg8 = document.getElementById("projectImg8");
+let projectImg9 = document.getElementById("projectImg9");
+let projectImg10 = document.getElementById("projectImg10");
+let projectImg11 = document.getElementById("projectImg11");
+let modalImg = document.getElementById("modalImg");
+let captionText = document.getElementById("caption");
+
+// projectImg.forEach(image => {
+//     image.addEventListener('click', showImage);
+// });
+// function showImage() {
+//     let source = this.src;
+//     modal.forEach(item => {
+//         item.style.display = "block";
+//     });
+//     // modal.style.display = "block";
+//     modalImg.forEach(image => {
+//         image.src = source;
+//     })
+//     // modalImg.src = this.src;
+//     captionText.innerHTML = this.alt;
+// };
+
+projectImg1.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+};
+projectImg2.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+};
+projectImg3.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+};
+projectImg4.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+};
+projectImg5.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+};
+projectImg6.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+};
+projectImg7.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+};
+projectImg8.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+};
+projectImg9.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+};
+projectImg10.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+};
+projectImg11.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+};
+
+
+
+// Get the <span> element that closes the modal
+let closeImg = document.getElementById("closeImg");
+
+// When the user clicks on the X or on the modal image, close the modal
+
+
+modal.onclick = function() {
+    modal.style.display = "none";
+};
+closeImg.onclick = function() {
+    modal.style.display = "none";
+};
+
+

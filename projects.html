@@ -19,6 +19,10 @@
         <link rel="stylesheet" href="https://use.typekit.net/xib2zdj.css">
         <meta name="author" content="Noah Sell">
         <title>Noah Sell Web Portfolio | Projects</title>
+        <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+        <link rel="manifest" href="favicons/site.webmanifest">
     </head>
     <body>
         <header>
@@ -28,7 +32,9 @@
                     <h1>Noah<br>Sell</h1>
                 </a>
             </div>                
-            <span id="menuControl" class="closed" aria-labelledby="navigation-menu-opener"><h2 id="navigation-menu-opener">Navigation Menu Opener</h2></span>
+            <div id="menuControlWrapper" class="closed controller">
+                <span id="menuControl" class="closed" aria-labelledby="navigation-menu-opener"><h2 id="navigation-menu-opener">Navigation Menu Opener</h2></span>
+            </div id="controlWrapper">
             <nav id="projectsNav" class="closed">
                 <h2>Main Navigation</h2>
                 <ul>
@@ -39,7 +45,7 @@
             </nav>
         </header>
         <main>
-            <ul id="projectList">
+            <ul id="projectList" class="scroll">
                 <li class="selected" id="project1">
                     <a href="#projectList">
                         <img src="images/nobodys-favorite.png" alt="Screenshot of the Nobody's Favorite band website">
@@ -86,6 +92,23 @@
                     <p>
                         This project can be viewed here: <span  id="linkToProject"><a href="https://nsell2.github.io/nobodys.favorite/" target="_blank" class="underline">Nobody's Favorite Band</a></span>
                     </p>
+                    <p>
+                        <span class="detailsTitle">Images: </span>
+                        <div class="projectImages">
+                            <img src="images/nobodys-favorite/lightdarkmode.png" alt="A toggle in the top-left corner of the screen allows users to easily swap between light mode and dark mode displays for the website." id="projectImg1" class="projectImg">
+                            <img src="images/nobodys-favorite/shows-merch.png" alt="Dates of upcoming shows can be clicked on to display more information about each performance.
+                            &NewLine;
+                            Clicking on the different merchandise items displays an image as well as the details and price of that item." id="projectImg2" class="projectImg">
+                            <img src="images/nobodys-favorite/sticker-contact.png" alt="A random number game can be played to win a prize at the band's next live show.
+                            &NewLine;
+                            There is a contact form at the bottom of the page for those looking to hire the band for performances." id="projectImg3" class="projectImg">
+                        </div>
+                        <!-- <div class="imgModal modal">
+                            <span class="closeImg">&times;</span>
+                            <img class="modalContent" id="modalImg" alt="">
+                            <div class="caption"></div>
+                        </div> -->
+                    </p>
                 </div>
                 <div id="pureImagination" class="hideProject">
                     <p>
@@ -112,34 +135,63 @@
                     <p>
                         A copy of this project can be viewed here: <span  id="linkToProject"><a href="https://drive.google.com/file/d/1ENej6iqGNyMLCmvVFUFzqnboBBvAmNGr/view?usp=sharing" target="_blank" class="underline">Pure Imagination Materials</a></span>
                     </p>
+                    <p>
+                        <span class="detailsTitle">Images: </span>
+                        <div class="projectImages">
+                            <img src="images/creative-south/nametag.png" alt="The front and back of lanyard name tags to be worn by attendees." id="projectImg4" class="projectImg">
+                            <img src="images/creative-south/tabletent.png" alt="Screenshots of the Adobe InDesign file for an eight-page booklet about the expo, guest speakers, and sponsors." id="projectImg5" class="projectImg">
+                            <img src="images/creative-south/banner.png" alt="A banner advertisement for Creative South 2024 meant to be displayed on the web." id="projectImg6" class="projectImg">
+                            <img src="images/creative-south/booklet.png" alt="Both sides of the folding table tents that would be set up around the expo, featuring a QR code that leads to the weekend's itinerary." id="projectImg7" class="projectImg"> 
+                        </div>
+                    </p>
                 </div>
                 <div id="dndSimplified" class="hideProject">
                     <p>
                         <span class="detailsTitle">Background: </span>
                         <span id="background">
-                            Nobody's Favorite is a punk rock band based out of Moorhead, MN that was formed in 2023. As the band is still fairly new, they needed a website that would help boost their name recognition, display dates of upcoming performances, and give a preview of the merchandise that they sell at their shows.
+                            The Graphic Information Technology Senior Project is an encapsulation of everything students learn throughout their program at ASU. I decided to create an online beginner's guide for the game 'Dungeons and Dragons' with introductory information about the game's rules and a page for users to create their own character.
                         </span>
                     </p>
                     <span class="lineBreak"></span>
                     <p>
                         <span class="detailsTitle">Process: </span>
                         <span id="process">
-                            I first had the client send me the band's logo, photos of merchandise options, candids from their past performances, and the information on their next upcoming shows. This helped me better understand the band's identity, which was important for selecting a color scheme and typography for the website. I then created a simple outline that I followed as I wrote the HTML code for the website's content. Once that was finished, I wrote the CSS and JavaScript code that gave the website its style and functionality.
+                            The first step in my process was to research and compile inspiration for the website's layout and visual elements. I decided to organize the main content into four chapters and set it against a background that looked like pages of a large book. I then used Adobe Illustrator to create the background image and the Table of Contents icon. From there, the bulk of the project involved writing and organizing the contents of each "chapter," paying close attention to ensuring it would be easily understood by users who are unfamiliar with the game. Once that was all finished, my next step was to create the "Character Creator" page. I incorporated a simple form that users could fill out and submit, then used JavaScript to save their answers and display their character's information neatly on the page.
                         </span>
                     </p>
                     <span class="lineBreak"></span>
                     <p>
                         <span class="detailsTitle">Results: </span>
                         <span id="results">
-                            The website was completed before the deadline and works as intended. The band was very pleased when they were sent the final result. It has a clean and simple layout that can easily be edited or added to if the band needs something changed, but still feels like a natural extension of the band's identity.
+                            This project was the largest I have completed in such a short amount of time, and it taught me a lot about the way I work while under the pressure of a looming deadline. Wile I completed this project before the deadline and was happy with the final result, there were still some less vital elements and functions that I would have liked to incorporate but had to cut due to time constraints.
                         </span>
                     </p>
                     <br>
                     <p>
-                        This project can be viewed here: <span  id="linkToProject"><a href="https://nsell2.github.io/nobodys.favorite/" target="_blank" class="underline">Nobody's Favorite Band</a></span>
+                        This project can be viewed here: <span  id="linkToProject"><a href="https://nsell2.github.io/Senior-Project/" target="_blank" class="underline">D&D Simplified</a></span>
+                    </p>
+                    <p>
+                        <span class="detailsTitle">Images: </span>
+                        <div class="projectImages">
+                            <img src="images/dnd-simplified/contents.png" alt="Users can easily navigate between chapters of the website by using the Table of Contents menu, as well as by clicking on arrows at the bottom of each page to go to the next or previous page." id="projectImg8" class="projectImg">
+                            <img src="images/dnd-simplified/illustrator.png" alt="This screenshot shows the Adobe Illustrator file in which I created the icons I used for the Table of Contents." id="projectImg9" class="projectImg">
+                            <img src="images/dnd-simplified/organization.png" alt="Each page of the website is broken up and organized so the information can be easily found and read without it being too overwhelming for users." id="projectImg10" class="projectImg">
+                            <img src="images/dnd-simplified/characters.png" alt="The Character Creator page allows users to use the information they learned in the guide to create their own character by filling out the short form." id="projectImg11" class="projectImg">
+                            
+                        </div>
+                        <!-- <div class="imgModal modal">
+                            <span class="closeImg">&times;</span>
+                            <img class="modalContent" id="modalImg" alt="">
+                            <div class="caption"></div>
+                        </div> -->
                     </p>
                 </div>
             </section>
+            <div id="imgModal" class="modal">
+                <span id="closeImg">&times;</span>
+                <img class="modalContent" id="modalImg" alt="">
+                <div id="caption"></div>
+            </div>
         </main>
         <footer>
             <small>Noah Sell &copy; 2025</small>
