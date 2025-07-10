@@ -480,8 +480,8 @@ li.deselected a {
 }
 
   
-  /* The Modal (background) */
-  .modal {
+/* The Modal (Image Pop-out) */
+.modal {
     display: none; 
     position: fixed;
     z-index: 1; 
@@ -493,18 +493,18 @@ li.deselected a {
     overflow: auto; 
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.9); 
-  }
-  
-  /* Modal Content (image) */
-  .modalContent {
+}
+
+/* Modal Content (image) */
+.modalContent {
     margin: auto;
     display: block;
     width: 80%;
     max-width: 700px;
-  }
-  
-  /* Caption of Modal Image */
-  #caption {
+}
+
+/* Caption of Modal Image */
+#caption {
     margin: auto;
     display: block;
     width: 90%;
@@ -518,21 +518,18 @@ li.deselected a {
     font-weight: 300;
     font-style: normal;
     line-height: 1.5;
-  }
-  
-  /* Add Animation */
-  .modalContent, #caption {  
+}
+/* Pop-Out Animation */
+.modalContent, #caption {  
     animation-name: zoom;
     animation-duration: 0.6s;
-  }
-  
-  @keyframes zoom {
+}
+@keyframes zoom {
     from {transform: scale(0.1)} 
     to {transform: scale(1)}
-  }
-  
-  /* The Close Button */
-  #closeImg {
+}
+/* The Close Button */
+#closeImg {
     position: absolute;
     top: 15px;
     right: 35px;
@@ -540,13 +537,12 @@ li.deselected a {
     font-size: 80px;
     font-weight: bold;
     transition: 0.3s;
-  }
-  
-  #closeImg:hover, #closeImg:focus {
-    color: #bbb;
+}
+#closeImg:hover, #closeImg:focus {
+    color: var(--background);
     text-decoration: none;
     cursor: pointer;
-  }
+}
 
 div.displayProject {
     display: block;
@@ -561,7 +557,6 @@ div.hideProject {
 
 
 /*----- Contact Page Styles -----*/
-
 #contact header {
     display: flex;
     margin: 12px auto;
@@ -585,9 +580,9 @@ div.hideProject {
     display: inline-block;
     margin: 0;
     font-size: 48px;
-    text-align: left;
-    
+    text-align: left;   
 }
+/* Nav */
 #contact nav {
     max-width: 57%;
     display: flex;
@@ -616,7 +611,6 @@ div.hideProject {
     font-size: 42px;
     padding: 5px 15px;
 }
-
 #contact nav li:nth-of-type(3) a {
     border: solid var(--light-forest) 4px;
 }
@@ -638,7 +632,7 @@ div.hideProject {
     display: block;
     margin: 0 8%;
 }
-
+/* Contact Form */
 form {
     margin: 12px 23%;
     padding: 12px 24px;
@@ -646,7 +640,6 @@ form {
     border-radius: 6px;
     position: relative;
 }
-
 form h2 {
     font-family: calluna, serif;
     font-weight: 600;
@@ -656,7 +649,6 @@ form h2 {
     color: var(--sea-foam);
     margin: 4px auto 6px;
 }
-
 form p {
     display: block;
     font-family: calluna, serif;
@@ -697,7 +689,6 @@ input:focus, textarea:focus {
     outline-color: black;
     outline-width: 3px;
 }
-
 #submit {
     display: block;
     position: relative;
@@ -739,7 +730,7 @@ input:focus, textarea:focus {
     bottom: 9px;
     background-color: white;
 }
-
+/* Footer */
 #contact small {
     margin: 48px auto 24px;
 }
@@ -890,6 +881,8 @@ input:focus, textarea:focus {
         height: 48px;
     }
 }
+
+
 
 @media screen and (max-width: 516px) {
     header {
